@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgb(0,31,131), rgb(192,0,189));
+}
+
+.wrapper{
+    background-color: rgb(218, 199, 199);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.0em;
+    border: 3px solid rgb(236, 181, 224);
+    border-radius: 2em;
+    padding: 2em 1em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    color: blue;
+    font-size: 1.5em;
+}
+
+#choices{
+    display: flex;
+    gap: 1em;
+}
+
+#choices button{
+    padding:  0.8em 1.2em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    border: 3px solid rgb(112, 48, 96);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#choices button:hover{
+    background-color: rgb(187, 96, 172);
+    border: 3px solid rgb(63, 32, 71);
+    transform: scale(1.05);
+}
+
+#player-choice,
+#computer-choice{
+    font-size: 0.9em;
+    font-weight: 550;
+}
+
+#resultDisplay{
+    font-size: 1.5em;
+    border: 3px solid rgb(101, 188, 238);
+    border-radius: 0.5em;
+    padding: 10px 40px;
+}
